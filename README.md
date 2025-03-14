@@ -148,7 +148,7 @@ fun SomeScreen(
         uiState = uiState,
     )
 
-    LaunchEffect(Unit) {
+    LaunchedEffect(Unit) {
         mainViewModel.loadAction() // Required: Load actions
         mainViewModel.action(Action.Task) // Option task
     }
